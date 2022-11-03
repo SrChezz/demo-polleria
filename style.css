@@ -116,7 +116,7 @@ section {
     background-position: center;
 }
 
-.main-banner {
+.main-banner, .top-banner {
     margin-top: 5rem;
 }
 
@@ -213,6 +213,7 @@ section {
 }
 
 footer {
+    margin-top: 20px;
     background-color: #ffe494;
     padding: 30px;
     display: flex;
@@ -238,4 +239,95 @@ footer {
     border-radius: 10px;
     padding: 10px;
     font-size: 1.4rem;
+}
+
+.simple-section > div{
+    padding-right: 20%;
+    padding-left: 20%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.simple-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.simple-image {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.side-section {
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.side-section > div{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.half-section {
+    height: 40vh;
+    padding: 30px;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    letter-spacing: 0.123rem;
+}
+
+.menu {
+    padding: 10% 15%;
+}
+
+.dish {
+    margin-bottom: 25px;
+}
+
+.dish-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px dotted black;
+    font-weight: bold;
+    opacity: .9;
+}
+
+.dish-title {
+    color: #FAC213;
+    letter-spacing: .125rem;
+    font-size: 1.1rem;
+}
+
+.dish-price {
+    letter-spacing: .125rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.bold-text {
+    width: 60%;
+    background-color: #1B1A17;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.big-boy {
+    font-size: 1.4rem;
+    color: #FAC213;
 }
