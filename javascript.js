@@ -9,3 +9,23 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+console.log("test")
+
+const button = document.getElementById("button")
+const close = document.getElementById("close")
+
+console.log(button)
+
+button.addEventListener("click", toggleMenu);
+close.addEventListener("click", toggleMenu2);
+
+
+
+function toggleMenu(){
+  document.getElementById("mobile").classList.remove("slide-navbar-closed")
+}
+
+function toggleMenu2(){
+  document.getElementById("mobile").classList.add("slide-navbar-closed")
+}

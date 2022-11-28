@@ -12,26 +12,49 @@
     <script src="https://kit.fontawesome.com/81478abc59.js" crossorigin="anonymous" defer></script>
     <link rel="shortcut icon" href="./images/chicken.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
     <title>Polleria el Gran Chicken</title>
 </head>
 <body>
     
     <nav class="main-nav" id="navbar">
-        <ul>
+        <a id="button" href="#" class="responsive">
+            <i class="navbar-icon fa-solid fa-bars"></i>
+        </a>
+        
+        <ul class="not-responsive">
             <li class="float-left"><a href="./">Inicio</a></li>
             <li class="float-left"><a href="./menu.html">Menu</a></li>
             <li class="float-left"><a href="./location.html">Ubicacion</a></li>
             <li class="float-left"><a href="./nosotros.html">Nosotros</a></li>
         </ul>
         <img class="main-logo" src="./images/main-logo.png" alt="" srcset="">
-        <ul>
+        <ul class="not-responsive">
             <li class="float-right"><a href="">S/0.00 <i class="navbar-icon fa-solid fa-basket-shopping"></i></a></li>
             <li class="float-right"><a href="https://www.facebook.com/polloalaparrill" target="_blank"><i class="navbar-icon fa-brands fa-instagram"></i></a></li>
             <li class="float-right"><a href="https://www.facebook.com/polloalaparrill" target="_blank"><i class=" navbar-icon fa-brands fa-square-facebook"></i></a></li>
             
         </ul>
+        <a class="responsive" href="#">S/0.00 <i class="navbar-icon fa-solid fa-basket-shopping"></i></a>
     </nav>
+        
+    <div id="mobile" class="responsive slide-navbar">
+        <i id ="close"  class="navbar-icon fa-solid fa-circle-xmark"></i>
+
+        <ul class="vertical-list">
+            <li><a href="./">Inicio</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./location.html">Ubicacion</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+        </ul>
+        <h4>Nuestas redes</h4>
+        <ul class="horizontal-list">
+            
+            <li><a href="https://www.facebook.com/polloalaparrill" target="_blank"><i class="navbar-icon fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.facebook.com/polloalaparrill" target="_blank"><i class=" navbar-icon fa-brands fa-square-facebook"></i> Facebook</a></li>
+            
+        </ul>
+    </div>
 
     <div class=" half-section top-banner side-section" style="background-image: url('./images/menu-top.jpg')">
         <div>
@@ -136,7 +159,7 @@
         <div>
             <span class="bold">Polleria El Gran Chicken</span> 
             <div class="box-highlight">
-                Pedidos llamando al <br> <strong>986 786 734</strong>
+                Pedidos llamando al <br> <strong>(064) 431450</strong>
             </div>
         </div>
 

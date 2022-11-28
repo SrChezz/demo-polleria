@@ -87,7 +87,7 @@ div.image {
 }
 
 .main-logo {
-    height: 4.5rem;
+    height: 4rem;
     overflow: hidden;
 }
 
@@ -109,7 +109,6 @@ div.image {
 
 section {
     padding: 30px;
-    height: 100vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -331,3 +330,86 @@ footer {
     font-size: 1.4rem;
     color: #FAC213;
 }
+
+@media (min-width: 601px) { 
+    section {
+        height: 100vh;
+    }
+
+    .responsive {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .not-responsive {
+        display: none;
+    }
+
+    .main-banner {
+        height: 100vh;
+    }
+    .main-banner > div {
+      width: 90%;
+    }
+
+    section {
+        min-height: 100vh;
+    }
+
+    .triple {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .triple > * {
+
+        width: 80%;
+        height: auto;
+    }
+
+    .tight-text {
+        width: 90%;
+    }
+
+    .carousel {
+        justify-content: center;
+    }
+
+    .carousel > * {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .main-nav {
+        padding: 10px 20px;
+    }
+
+    .slide-navbar {
+        position: fixed;
+        z-index: 10;
+        width: 60%;
+        background-color: #FAC213;
+        top: 0px;
+        height: 100vh;
+        padding: 20px;
+        transition: left .4s ease;
+        left: 0%;
+    }
+
+    #button {
+        width: 20%;
+    }
+
+    .slide-navbar-closed {
+        left: -70%;
+    }
+
+    .slide-navbar ul{
+       padding-inline-start: 10px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+    }
+  }
